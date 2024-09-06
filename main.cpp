@@ -1,7 +1,8 @@
 #include <iostream>
 
 int main(){
-  std::cout << "¥¥¥¥¥";
+  
+  
   
   return 0;
 }
@@ -50,19 +51,19 @@ int main(){
 // variable = (condition) ? expressionTrue : expressionFalse;          kr¢tka wersja
 // 
 // switch(){
-//  case 1:           liczby
-//
+//  case 1:           liczby (int)
+//  case 'A':
 //  brake;
+//  default:
 // }
-//  
 // 
+// %%   ligiczne 'and'    ||    logiczne 'or'   !   logiczne 'not'
 // 
-// 
-// 
-// 
-// 
-// 
-// 
+// std::string name;;       name.lenght() .empty()(1 lub 0)   .clear()    .append("@gmail.com")
+//                              .at(0) wy˜wietla pierwszy znak tekstu    
+//                              .insert(0, "@") dodaje @ jako pierwszy znak
+//                              .find(' ')  wyszukuje np. spacje
+//                              .erase(0,3) usuwa znaki od 0 do 3 <1;3)
 // 
 // 
 // 
