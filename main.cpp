@@ -1,9 +1,8 @@
 #include <iostream>
-
+#include <string>
 int main(){
   
-  
-  
+   
   return 0;
 }
 
@@ -65,16 +64,18 @@ int main(){
 //                              .find(' ')  wyszukuje np. spacje
 //                              .erase(0,3) usuwa znaki od 0 do 3 <1;3)
 // 
+// while(){                     do{                                     for(int i; 1<=3; i++){        
+//
+// }                            }while();                               }
 // 
+// break;      break out of a loop
+// continue;   skip current iteration
 // 
+// srand(time(NULL))  0 jak z obecnego 
+// rand() % zakres
 // 
+// void funkcja(){}   w () paramrtry jak chcemy co˜ "wˆo¾y†" do tej funkcji, takie same 
 // 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
+// 2:10:34
 // 
 // 
