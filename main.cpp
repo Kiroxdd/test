@@ -1,6 +1,22 @@
 #include <iostream>
-#include <string>
-int main() { return 0; }
+
+int main() {
+  if (__cplusplus == 202101L)
+    std::cout << "C++23";
+  else if (__cplusplus == 202002L)
+    std::cout << "C++20";
+  else if (__cplusplus == 201703L)
+    std::cout << "C++17";
+  else if (__cplusplus == 201402L)
+    std::cout << "C++14";
+  else if (__cplusplus == 201103L)
+    std::cout << "C++11";
+  else if (__cplusplus == 199711L)
+    std::cout << "C++98";
+  else
+    std::cout << "pre-standard C++." << __cplusplus;
+  std::cout << "\n";
+}
 
 // int - integer, caˆe liczby
 // (long) double, liczby z przecinkiem (kropk¥)
@@ -9,6 +25,9 @@ int main() { return 0; }
 // std::string - ci¥g znak¢w ("Aha xd")
 //
 // const double LIGHT_SPEED=299792458 - tylko do odczytu, nie da si© zmieni†
+//                                    - parameter that is effectively read-only
+//                                      code is more secure & conveys intent
+//                                      useful for references and pointers
 // (nazwy z du¾ych liter)
 //
 //
@@ -96,10 +115,10 @@ int main() { return 0; }
 //
 //  for(int i=0; i<sizeof(grades)/sizeof(char); i++){
 //      cout<<grades[i]<<"\n";
-// }                                                                 to samo
-// tylko inaczej
-//                                                                           ||
-//  foreach loop - loop that eases the traversal over an iterable data set   \/
+// }
+//
+//
+//  foreach loop - loop that eases the traversal over an iterable data set
 //
 //  for(std::string student : students){
 //      cout << student <<'\n';
@@ -110,6 +129,101 @@ int main() { return 0; }
 //
 //  int age = 21;
 //  std::cout << &age;
+//
+//  pointer = variable that stores a memory address of another variable,
+//  sometimes it's easier to work with an address
+//
+//    & address-of operator
+//    * dereference operator
+//
+//    string food = "Pizza";  // Variable declaration
+//    string* ptr = &food;    // Pointer declaration
+//
+//     Reference: Output the memory address of food with the pointer (0x6dfed4)
+//     cout << ptr << "\n";
+//
+//     Dereference: Output the value of food with the pointer (Pizza)
+//     cout << *ptr << "\n";
+//
+//    NULL pointer      int* pointer = nullptr;
+//
+//    int* some_ptr;
+//    ...
+//    if (some_ptr == NULL){
+//    // Handle null-pointer error
+//    }
+//    else{
+//    // Proceed
+//    }
+//
+//    dynamic memory = Memory that is allocated aftr the program is already
+//    compiled & running. Use the 'new' operator to allocate memory in the heap
+//    rather than the stack. Useful when don't know how much memory we will
+//    need. Makes our programs more flexible, espacially when accepting user
+//    input.
+//    
+//    pNum = new int;
+//
+//    delete pNum;
+//    delete[] pString;
+//
+//
+//    template <typename T, typename U>
+// 
+//    auto max(T x, U y){
+//    return (x > y)? x: y;
+//    }
+//
+//
+//    struct = A structure that group related variables under one name, structs can contain many different data types (strings, int, char, bool, ...), variables in a struct are known as "memners", members can be access with . "Class Member Access Operator"
+//
+//    struct student{
+//    std::string name;
+//    double gpa;
+//    bool enrolled;
+//    };
+//
+//    student student1;
+//    student1.name = "Spongebob";
+//    student1.gpa = 3.2;
+//    ...
+//
+//
+//    enums = a user-defined data type that consists of pair named-integers constants. GREAT if you have a lot of potential options
+//
+//    enum Day {sunday = 0, monday = 1, ...};
+//
+//    Day today = friday;
+//
+//    switch(today){
+//      case sunday:
+//      case 2:
+//
+//
+//    object = a collection of attributes and methods. They can have characteristics and could peform actions. Can be used to mimic real world items (ex. phone, book, dog). Created from a class witch acts as a "blue-print".
+//
+//      class main
+//      {
+//       public:
+//         main(/* args */);
+//         
+//       };
+//    
+//  constructor = 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
